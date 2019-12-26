@@ -1,0 +1,94 @@
+{
+	"info": {
+		"_postman_id": "1af734b6-f88a-4b81-bee2-533ad4cd19a7",
+		"name": "IOT api",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "GET all",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:7778/v1/data/",
+					"host": [
+						"localhost"
+					],
+					"port": "7778",
+					"path": [
+						"v1",
+						"data",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GET one newer than timestamp",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:7778/v1/data/new/2019-11-05 22:06:53",
+					"host": [
+						"localhost"
+					],
+					"port": "7778",
+					"path": [
+						"v1",
+						"data",
+						"new",
+						"2019-11-05 22:06:53"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "START watering",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:7778/v1/control/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "7778",
+					"path": [
+						"v1",
+						"control",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GET current value",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:7778/v1/control/print/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "7778",
+					"path": [
+						"v1",
+						"control",
+						"print",
+						""
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"protocolProfileBehavior": {}
+}

@@ -1,0 +1,8 @@
+CREATE TABLE `plant_data` (
+  `id_plant_data` int(11) NOT NULL AUTO_INCREMENT,
+  `timestamp` datetime NOT NULL,
+  `temperature` double NOT NULL,
+  `light` double NOT NULL,
+  `water_level` double NOT NULL,
+  PRIMARY KEY (`id_plant_data`)
+) ENGINE=InnoDB AUTO_INCREMENT=4 DEFAULT CHARSET=utf8;

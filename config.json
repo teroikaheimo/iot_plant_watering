@@ -1,0 +1,18 @@
+{
+    "server": {
+        "port": 7778,
+        "accessControl": {
+            "origin": "http://localhost:7778",
+            "methods": "GET, POST, DELETE, PUT, OPTIONS",
+            "headers": "Content-Type"
+        }
+    },
+    "arduino": {
+        "port": "COM7",
+        "tipsForPortVariable": {
+            "windows": "COM7",
+            "raspberry1": "/dev/ttyACM0",
+            "raspberry2": "/dev/ttyUSB0"
+        }
+    }
+}
